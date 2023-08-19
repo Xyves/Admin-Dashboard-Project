@@ -15,7 +15,9 @@ body {
   width: 100%;
   height: 100%;
   background-color: green;
+  font-size: 24px;
 }
+/* Sidebar */
 .sidebar {
   display: grid;
   grid-template-columns: auto;
@@ -24,6 +26,30 @@ body {
   height: 100%;
   grid-row: span 7;
 }
+.dashboard-icon p {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px; /* Create space for the icon */
+}
+.dashboard-icon p::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 16%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background-image: url("img/view-dashboard.svg");
+  background-size: cover;
+}
+ul {
+  list-style: none;
+}
+.dash {
+  font-size: 1.1em;
+  margin-left: 2rem;
+}
+/* MENU */
 .search {
   background-color: lightcoral;
 }
