@@ -87,13 +87,13 @@ ul {
 .box p {
   text-align: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   margin: 0;
 }
 .projects > .box:nth-child(-n + 2) {
   margin-top: 50px;
 }
-
+/* Project Photos */
 .box1 {
   background-image: url(img/photo1.jpg);
 }
