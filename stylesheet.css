@@ -13,25 +13,26 @@ body {
   grid-template-columns: 1fr 4fr;
   grid-template-rows: repeat(6, 1fr);
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: green;
   font-size: 24px;
 }
+
 /* Sidebar */
 .sidebar {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
   background-color: red;
-  height: 100%;
-  grid-row: span 7;
+  grid-row: span 6;
 }
-.dashboard-icon p {
+.dashboard p {
   position: relative;
   display: inline-block;
   padding-left: 40px; /* Create space for the icon */
 }
-.dashboard-icon p::before {
+/* Icons */
+.dashboard p::before {
   content: "";
   position: absolute;
   left: -10%;
@@ -39,15 +40,53 @@ body {
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
-  background-image: url("img/view-dashboard.svg");
+  background-image: url("icons/view-dashboard.svg");
   background-size: cover;
 }
+.dash ul li::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.home::before {
+  background-image: url("icons/home.svg");
+}
+.profile::before {
+  background-image: url(icons/account.svg);
+}
+.msg::before {
+  background-image: url(icons/message.svg);
+}
+.history::before {
+  background-image: url(icons/history.svg);
+}
+.tasks::before {
+  background-image: url(icons/tasks.svg);
+}
+.community::before {
+  background-image: url(icons/community.svg);
+}
+.settings::before {
+  background-image: url(icons/settings.svg);
+}
+.support::before {
+  background-image: url(icons/tasks.svg);
+}
+.privacy::before {
+  background-image: url("icons/privacy.svg");
+}
+
 ul {
   list-style: none;
 }
 .dash {
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin-left: 2rem;
+  /* cursor: pointer; */
 }
 /* MENU */
 .search {
@@ -56,7 +95,7 @@ ul {
 .menu {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: repeat(5, 150px);
+  grid-template-rows: repeat(5, 1fr);
   background-color: blue;
   grid-area: 2/2/7/4;
 }
