@@ -151,3 +151,11 @@ ul {
 .box6 {
   background-image: url(img/photo6.jpg);
 }
+.trending {
+}
+.people {
+  display: flex;
+  width: 100px;
+  height: 73%;
+  background-color: white;
+}
