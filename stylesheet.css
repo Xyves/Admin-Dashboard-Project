@@ -23,8 +23,11 @@ body {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(5, 1fr);
-  background-color: red;
+
   grid-row: span 6;
+  background-image: url(img/sidebar-bg.jpg);
+  background-size: cover;
+  color: white;
 }
 .dashboard p {
   position: relative;
@@ -54,6 +57,7 @@ body {
 }
 .home::before {
   background-image: url("icons/home.svg");
+  fill: white;
 }
 .profile::before {
   background-image: url(icons/account.svg);
