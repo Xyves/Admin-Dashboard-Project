@@ -8,11 +8,11 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: repeat(6, 1fr);
   width: 100%;
   height: 100vh;
-  background-color: green;
+  background-color: #ed458e;
   font-size: 1.35rem;
 }
 
@@ -22,7 +22,7 @@ body {
   grid-template-columns: auto;
   grid-template-rows: repeat(5, 1fr);
   grid-row: span 6;
-  background-image: url(img/sidebar-bg.jpg);
+  background: #53a2be;
   background-size: cover;
   color: white;
 }
@@ -63,7 +63,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: 10px;
-  filter: invert(100%) brightness(70%) contrast(60%);
 }
 .home::before {
   background-image: url("icons/home.svg");
@@ -108,68 +107,73 @@ ul {
 .menu {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  background-color: blue;
+  grid-template-rows: 50px auto 1fr 1fr 1fr;
+  background-color: #343437;
+
   grid-area: 2/2/7/4;
 }
 .projects {
   display: grid;
-  background-color: aqua;
-  grid-row: 1 / 6;
-  grid-template-rows: repeat(3, minmax(50px, 1fr));
+  grid-row: 1 / 7;
+  grid-template-rows: 20px repeat(3, minmax(50px, 1fr));
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  background-image: url(img/project-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .info {
-  grid-area: 1/2 /3 / 3;
+  grid-row: 2/4;
   background-color: yellowgreen;
+  margin: 20px;
 }
 .trending {
   grid-row: 3/6;
-  background-color: blueviolet;
 }
 .box {
   border-left: 5px solid green;
   margin: 30px 40px;
-  background-position: center;
-  background-size: cover;
+  background-color: #ed458e;
   max-width: 100%;
 }
 
-.projects > .box:nth-child(-n + 2) {
-  margin-top: 50px;
-}
 #search-bar {
   width: 100%;
   height: 50px;
 }
 /* Project Photos */
-.box1 {
-  background-image: url(img/photo1.jpg);
-}
-.box2 {
-  background-image: url(img/photo2.jpg);
-}
-.box3 {
-  background-image: url(img/photo3.jpg);
-}
-.box4 {
-  background-image: url(img/photo4.jpg);
-}
-.box5 {
-  background-image: url(img/photo5.jpg);
-}
-.box6 {
-  background-image: url(img/photo6.jpg);
-}
+
 .trending {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+  gap: 2px;
+  border: 1px solid red;
+  margin-bottom: 30px;
+}
+.trending h3 {
+  color: white;
+  margin: 0;
+  display: inline;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 15px;
 }
 .people {
   display: flex;
-  width: 100px;
-  height: 73%;
+  margin: 2px;
   background-color: white;
+}
+.menu {
+}
+
+.menu .projects {
+  flex-direction: column;
+}
+.projects box {
+  grid-row: 2/7;
+}
+.container-3 {
 }
