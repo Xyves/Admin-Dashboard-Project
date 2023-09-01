@@ -102,7 +102,7 @@ ul {
 }
 /* MENU */
 .search {
-  background-color: lightcoral;
+  background-color: ed458e;
 }
 .menu {
   display: grid;
@@ -141,6 +141,7 @@ ul {
   border-radius: 40px 40px;
   margin-left: 50px;
   height: 30px;
+  background-color: black;
 }
 /* Project Photos */
 
