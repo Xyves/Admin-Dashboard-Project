@@ -102,7 +102,8 @@ ul {
 }
 /* MENU */
 .search {
-  background-color: ed458e;
+  background-color: #ed458e;
+  display: inline;
 }
 .menu {
   display: grid;
@@ -170,6 +171,7 @@ ul {
   background-color: white;
 }
 .menus {
+  margin-top: 25px;
 }
 
 .menu .projects {
@@ -179,4 +181,12 @@ ul {
   grid-row: 2/7;
 }
 .container-3 {
+}
+.buttons {
+  display: inline-block;
+  margin-left: 15%;
+}
+.buttons button {
+  width: 50px;
+  height: 25px;
 }
