@@ -187,6 +187,7 @@ ul {
   margin-left: 15%;
 }
 .buttons button {
-  width: 50px;
+  width: 70px;
   height: 25px;
+  border-radius: 25px;
 }
