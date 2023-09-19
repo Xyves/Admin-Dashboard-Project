@@ -12,7 +12,7 @@ body {
   grid-template-rows: repeat(6, 1fr);
   width: 100%;
   height: 100vh;
-  background-color: #ed458e;
+  background-color: greenyellow;
   font-size: 1.35rem;
 }
 
@@ -29,7 +29,8 @@ body {
 .dashboard p {
   position: relative;
   display: inline-block;
-  padding-left: 40px;
+  text-align: center;
+  padding-left: 50px;
 }
 .icon-container2 {
   grid-row: 5;
@@ -37,11 +38,12 @@ body {
   color: white;
 }
 .icon-container2 ul li {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 /* Icons */
 .dashboard-icon {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
 }
 
 .dashboard p::before {
@@ -54,6 +56,10 @@ body {
   height: 60px;
   background-image: url("icons/view-dashboard.svg");
   background-size: cover;
+}
+.dash ul {
+  margin-right: 20px;
+  margin-left: 0;
 }
 .dash ul li::before {
   content: "";
@@ -96,13 +102,15 @@ ul {
   list-style: none;
 }
 .dash {
-  font-size: 1.3em;
-  margin-left: 2rem;
-  /* cursor: pointer; */
+  color: black;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-left: 0.7rem;
 }
+
 /* MENU */
+
 .search {
-  background-color: #ed458e;
   display: inline;
 }
 .menu {
@@ -138,11 +146,19 @@ ul {
 }
 
 #search-bar {
-  width: 50%;
+  width: 60%;
   border-radius: 40px 40px;
-  margin-left: 50px;
-  height: 30px;
-  background-color: black;
+  height: 45px;
+}
+.search label::before {
+  background-image: url(icons/search.png);
+  width: 50px;
+  height: 33px;
+  content: "";
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -10%;
 }
 /* Project Photos */
 
@@ -190,4 +206,7 @@ ul {
   width: 70px;
   height: 25px;
   border-radius: 25px;
+}
+.text {
+  font-size: 3rem;
 }
