@@ -5,6 +5,7 @@ body {
   border: 0;
   vertical-align: baseline;
   height: 100%;
+  overflow: hidden;
 }
 .container {
   display: grid;
@@ -148,13 +149,12 @@ ul {
 .cards {
   display: grid;
   grid-row: 2 / 6;
-  grid-template-rows: repeat(2, minmax(150px, 1fr));
+  grid-template-rows: repeat(2, minmax(150px, 365px));
   grid-template-columns: repeat(3, minmax(300px, 33%));
   gap: 20px;
 }
 .card {
   margin: 7px;
-  background-color: #ed458e;
   position: relative;
 }
 .centered {
@@ -175,11 +175,11 @@ ul {
   margin-bottom: 0;
 }
 .info p {
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
 }
 .info h3 {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
 }
 hr {
