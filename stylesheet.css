@@ -151,7 +151,7 @@ ul {
   grid-row: 2 / 6;
   grid-template-rows: repeat(2, minmax(150px, 365px));
   grid-template-columns: repeat(3, minmax(300px, 33%));
-  gap: 20px;
+  gap: 40px;
 }
 .card {
   margin: 7px;
