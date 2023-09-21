@@ -21,7 +21,7 @@ body {
   grid-template-columns: auto;
   grid-template-rows: repeat(5, 1fr);
   grid-row: span 6;
-  background-color: rgb(20, 117, 170);
+  background-color: #b9b4c7;
   color: white;
 }
 .dashboard p {
@@ -92,15 +92,13 @@ ul {
 .privacy::before {
   background-image: url("icons/privacy.svg");
 }
-
 /* Header */
-
 .header {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 70px 50px;
-  margin-left: 10px;
   overflow-x: auto;
+  background-color: #5c5470;
 }
 .profile-picture {
   height: 45px;
@@ -108,21 +106,19 @@ ul {
   border-radius: 50%;
 }
 .notification {
-  margin-left: auto;
-  margin-right: 10%;
+  margin: 10px 10% 0 auto;
   color: white;
   font-weight: bold;
 }
 .notification::before {
-  background-image: url(icons/notification.png);
-  content: "";
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  background-image: url(icons/notification.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  content: "";
   vertical-align: middle;
   margin-right: 25px;
+  width: 30px;
+  height: 30px;
 }
 #search-bar {
   width: 75%;
@@ -144,10 +140,10 @@ ul {
 .middle-section {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 80px 1fr;
-  background-color: #343437;
+  grid-template-rows: 60px 1fr;
+  background-color: #352f44;
   grid-area: 2/2/7/4;
-  color: white;
+  color: #352f44;
 }
 .cards {
   display: grid;
@@ -157,8 +153,7 @@ ul {
   gap: 20px;
 }
 .card {
-  border-left: 5px solid green;
-  margin: 10px;
+  margin: 7px;
   background-color: #ed458e;
   position: relative;
 }
@@ -172,26 +167,19 @@ ul {
   font-weight: bold;
   font-size: 2rem;
 }
-
 /* Aside */
-aside {
-  display: grid;
-  grid-row: 2/4;
-}
-
 .info {
   display: grid;
-
-  background-color: rgb(61, 61, 61);
+  background-color: #faf0e6;
   margin: 10px;
   margin-bottom: 0;
 }
 .info p {
-  font-size: 11px;
+  font-size: 14px;
   margin: 0;
 }
 .info h3 {
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 500;
 }
 hr {
@@ -204,14 +192,12 @@ hr {
   margin: 2px;
   padding: 3px;
 }
-
 .trending {
   display: grid;
   grid-column: 1/2;
   grid-row: 3/6;
   grid-template-rows: 50px repeat(3, 1fr);
   gap: 2px;
-  border: 1px solid red;
   margin-bottom: 30px;
   margin: 10px;
 }
@@ -219,15 +205,14 @@ hr {
   color: white;
   margin: 0;
   display: inline;
-
   margin-top: 10px;
 }
 .people {
   display: flex;
+  align-items: center;
   margin: 2px;
-  background-color: white;
+  background-color: #faf0e6;
 }
-
 .buttons {
   display: flex;
   align-items: center;
@@ -246,6 +231,7 @@ hr {
 .announcements {
   font-size: 3rem;
   text-align: center;
+  color: white;
 }
 .welcome img {
   height: 70px;
@@ -266,4 +252,11 @@ hr {
 .card img {
   width: 100%;
   max-height: 100%;
+}
+.people img {
+  width: 60px;
+  border-radius: 25px;
+}
+.people-text {
+  margin: 15px;
 }
