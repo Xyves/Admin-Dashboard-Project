@@ -151,7 +151,7 @@ ul {
   grid-row: 2 / 6;
   grid-template-rows: repeat(2, minmax(150px, 365px));
   grid-template-columns: repeat(3, minmax(300px, 33%));
-  gap: 40px;
+  gap: 12px;
 }
 .card {
   margin: 7px;
@@ -220,9 +220,9 @@ hr {
   grid-column: 2/2;
 }
 .buttons button {
-  color: white;
+  color: rgb(53, 47, 68);
   width: 120px;
-  background-color: blue;
+  background-color: #faf0e6;
   padding: 10px;
   border-radius: 25px;
   margin-left: 15px;
